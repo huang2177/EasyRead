@@ -17,7 +17,7 @@ void main() {
             "/about_app": (context) =>
             new WebPage("about flutter", "http://flutter.link/"),
             "/code": (context) =>
-            new WebPage("github", "https://github.com/huang2177"),
+            new WebPage("github", "https://github.com/huang2177/EasyRead"),
 
           },
           home: new ReadHubApp(),
