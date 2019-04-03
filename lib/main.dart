@@ -13,11 +13,11 @@ void main() {
         new MaterialApp(
           routes:  {
             "/about_me": (context) =>
-            new WebPage("about me", "http://github.io/huang2177"),
+            new WebPage("Bm和弦的博客", "http://huang2177.github.io/"),
             "/about_app": (context) =>
-            new WebPage("about flutter", "http://flutter.link/"),
+            new WebPage("关于flutter", "http://flutter.link/"),
             "/code": (context) =>
-            new WebPage("github", "https://github.com/huang2177/EasyRead"),
+            new WebPage("EasyRead", "https://github.com/huang2177/EasyRead"),
 
           },
           home: new ReadHubApp(),

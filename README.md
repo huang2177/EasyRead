@@ -9,7 +9,7 @@
 	
 3.	flutter run
 
-![](http://github.io/img/easy_read.jpg)
+![](http://huang2177.github.io/img/easy_read.jpg)
 
 ![](http://ww2.sinaimg.cn/large/0060lm7Tly1fo2512n71pj30dc0npdkk.jpg)
 
