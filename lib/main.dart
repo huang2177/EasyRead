@@ -1,17 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/app_page.dart';
 
-void main() => runApp(new MyApp());
+import 'package:readhub/app/app.dart';
+import 'package:readhub/app/ui/web/WebPage.dart';
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-        title: 'Flutter Demo',
-        theme: new ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: new AppPage(title: 'Flutter Demo'));
-  }
+final readHubTheme = new ThemeData(
+  brightness: Brightness.light,
+  primarySwatch: Colors.blue,
+);
+
+void main() {
+  runApp(
+        new MaterialApp(
+          routes:  {
+            "/about_me": (context) =>
+            new WebPage("about me", "http://github.io/huang2177"),
+            "/about_app": (context) =>
+            new WebPage("about flutter", "http://flutter.link/"),
+            "/code": (context) =>
+            new WebPage("github", "https://github.com/huang2177"),
+
+          },
+          home: new ReadHubApp(),
+          theme: readHubTheme,)
+    );
 }
+
